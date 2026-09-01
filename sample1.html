@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QGabay Emergency Profile</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        background: #eef3ef;
+        color: #222;
+        padding: 20px;
+    }
+
+    .profile {
+        width: 100%;
+        max-width: 430px;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0,0,0,.15);
+    }
+
+    .header {
+        background: #168447;
+        color: white;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .header p {
+        margin: 7px 0 0;
+        font-size: 13px;
+        opacity: .9;
+    }
+
+    .content {
+        padding: 25px;
+    }
+
+    .person {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        border-radius: 50%;
+        background: #e8f5ed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+    }
+
+    .person h2 {
+        margin: 12px 0 3px;
+        font-size: 24px;
+    }
+
+    .person span {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .warning {
+        background: #fff0f0;
+        border-left: 5px solid #d62828;
+        padding: 14px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        color: #9b1c1c;
+        font-weight: bold;
+    }
+
+    .info {
+        display: grid;
+        gap: 12px;
+    }
+
+    .item {
+        background: #f5f7f6;
+        padding: 13px 15px;
+        border-radius: 10px;
+    }
+
+    .label {
+        display: block;
+        font-size: 12px;
+        color: #777;
+        margin-bottom: 4px;
+    }
+
+    .value {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .contact {
+        margin-top: 22px;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        background: #d62828;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .contact:hover {
+        opacity: .9;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 15px;
+        background: #f5f7f6;
+        color: #777;
+        font-size: 11px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="profile">
+
+    <div class="header">
+        <div class="logo">✚ QGabay</div>
+        <h1>Emergency Profile</h1>
+        <p>Your Health, One Scan Away</p>
+    </div>
+
+    <div class="content">
+
+        <div class="person">
+            <div class="avatar"></div>
+            <h2>Juan Dela Cruz</h2>
+            <span>QGabay ID: QG-0001</span>
+        </div>
+
+        <div class="warning">
+            ⚠ EMERGENCY INFORMATION
+        </div>
+
+        <div class="info">
+            <div class="item">
+                <span class="label">Age</span>
+                <span class="value">17 years old</span>
+            </div>
+
+            <div class="item">
+                <span class="label">Blood Type</span>
+                <span class="value">O+</span>
+            </div>
+
+            <div class="item">
+                <span class="label">Allergies</span>
+                <span class="value">None listed</span>
+            </div>
+
+            <div class="item">
+                <span class="label">Medical Information</span>
+                <span class="value">Example medical information</span>
+            </div>
+
+            <div class="item">
+                <span class="label">Emergency Contact</span>
+                <span class="value">Maria Dela Cruz</span>
+            </div>
+
+            <div class="item">
+                <span class="label">Contact Number</span>
+                <span class="value">0912 345 6789</span>
+            </div>
+        </div>
+
+        <button class="contact" onclick="alert('Calling emergency contact...')">
+             Contact Emergency Person
+        </button>
+
+    </div>
+
+    <div class="footer">
+        QGabay Emergency Identification System
+    </div>
+
+</div>
+
+</body>
+</html>
